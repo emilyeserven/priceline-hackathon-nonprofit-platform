@@ -1,3 +1,4 @@
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: white;
@@ -54,4 +55,8 @@
 
 .btn a{
   color: skyblue;
+}
+
+.container-two{
+  text-align:center;
 }
