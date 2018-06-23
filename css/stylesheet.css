@@ -1,3 +1,7 @@
+body {
+  background-color: #F5F5F5;
+}
+
 .inactive {
   display:none;
 }
@@ -17,11 +21,15 @@
   background: -moz-linear-gradient(left, #32e7ff 0%, #8c25c4 50%, #aa3b3b 100%);
   background: -webkit-linear-gradient(left, #32e7ff 0%,#8c25c4 50%,#aa3b3b 100%);
   background: linear-gradient(to right, #32e7ff 0%,#8c25c4 50%,#aa3b3b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32e7ff', endColorstr='#aa3b3b',GradientType=1 );width: 80%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32e7ff', endColorstr='#aa3b3b',GradientType=1 );
+  width: 80%;
   display:block;
   border-radius: 10px;
   height: 30px;
   margin: 0 auto 4.5em;
+}
+.badometer.meter-fullwidth {
+  width: 100% !important;;
 }
 
 /* Add a black background color to the top navigation */
@@ -97,15 +105,16 @@
 
 .container-three h2{
   text-align:center;
-  margin-top: 5em;
 }
 
-.container-three h3{
-  color:skyblue;
+.container-three .col-12 h3{
+  //color:skyblue;
+  margin-top: 20px;
 }
-
-.container-three .item {
-    display: inline-block;
-    width: 30%;
-    margin-right: 3%;
+/*
+.container-three img {
+    border-radius: 50%;
+    width: 80%;
+    height: 220px;
 }
+*/
