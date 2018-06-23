@@ -66,3 +66,18 @@
 .container-two{
   text-align:center;
 }
+
+.container-three h2{
+  text-align:center;
+  margin-top: 5em;
+}
+
+.container-three h3{
+  color:skyblue;
+}
+
+.container-three .item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+}
