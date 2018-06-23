@@ -51,9 +51,9 @@ body {
     background-color: white;
     overflow: hidden;
     padding-right: 5em;
-    border-bottom: solid 3px;
+    border-bottom: solid 0px;
     border-color: #f2f2f2;
-    padding-bottom:1em;
+    padding-bottom:0em;
 }
 
 /* Style the links inside the navigation bar */
@@ -110,6 +110,10 @@ body {
   margin-left: 20px;
   margin-bottom: 5px;
 }
+.btn.btn-footer {
+  background-color: #fff !important;
+  color: #0066A6 !important;
+}
 
 .btn a{
   color: skyblue;
@@ -137,4 +141,14 @@ body {
 
 .container-dark {
   background-color: #eee;
+}
+
+.container-footer {
+  background-color: #333;
+  color: #F5F5F5;
+  padding: 10px 0;
+}
+.container-of-footer {
+  background-color: #0066A6;
+  color: #fff;
 }
