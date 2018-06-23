@@ -23,19 +23,21 @@
       <p>
       <h1>  INTERESTING TITLE HERE! </h1>
       </p>
-      <form id="myForm">
-        <label for="myName">What's your ZIP code?</label>
-        <input id="myName" name="zip" value="10001">
-        <input type="submit" value="Send Me!">
+      <form id="myForm" class="form-group">
+        <label for="myName">What's your ZIP code?</label><br />
+        <input id="myName" class="form-control" name="zip" value="10001"><br />
+        <input type="submit" class="btn btn-primary" value="Send Me!">
       </form>
     </div>
   </div>
-  <div class="container-fluid container-reveal inactive">
+  <div id="response-body" class="container-fluid container-reveal inactive">
     <div class="container-fluid container-two">
-      <h2>The air quality index for <span id="aqi_city_name">New York</span> is <span id="qui_number">300</span>.</h2><br>
+      <h2>The air quality index for <span id="aqi_city_name">New York</span> is <span id="aqi_number">300</span>.</h2><br>
       <h2>You're not doing so great.</h2><br>
       <h2>What does this mean?</h2>
     </div>
+  </div>
+  <div id="info-body" class="container-fluid inactive">
     <!-- interactive above here -->
   <div class="container-fluid container-three">
     <h2>Here's the breakdown...</h2>

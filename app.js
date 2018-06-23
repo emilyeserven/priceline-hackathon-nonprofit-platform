@@ -1,7 +1,8 @@
 // Setup nodes
-var cityNode = document.getElementById('city'),
-  aqiNode = document.getElementById('aqi'),
-  responseBodyNode = document.getElementById('response-body');
+var cityNode = document.getElementById('aqi_city_name'),
+  aqiNode = document.getElementById('aqi_number'),
+  responseBodyNode = document.getElementById('response-body'),
+  infoBodyNode = document.getElementById('info-body');
 
 // State to Abbreviation converter from:
 // https://gist.github.com/calebgrove/c285a9510948b633aa47
@@ -78,10 +79,11 @@ function abbrState(input, to){
     }
 }
 
+// Once everything is loaded, run this...
+// (function to get API data from the form entry)
 window.addEventListener("load", function () {
 
     function sendData() {
-      var XHR = new XMLHttpRequest();
 
       // Bind the FormData object and the form element
       var FD = new FormData(form);
@@ -114,7 +116,14 @@ window.addEventListener("load", function () {
         aqiNode.innerHTML = pollution;
         responseBodyNode.classList.add("active");
         responseBodyNode.classList.remove("inactive");
+        infoBodyNode.classList.add("active");
+        infoBodyNode.classList.remove("inactive");
         return pollution;
+      })
+      .catch(function(error){
+        responseBodyNode.classList.remove("inactive");
+        infoBodyNode.classList.add("active");
+        infoBodyNode.classList.remove("inactive");
       });
     }
 
